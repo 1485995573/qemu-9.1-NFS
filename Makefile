@@ -8,6 +8,13 @@ QEMU = qemu-system-arm
 .PHONY: all
 all: run
 
+# 配置 tap0
+.PHONY: setup_tap
+setup_tap:
+	sudo ip tuntap add dev tap0 mode tap
+	sudo ip link set tap0 up
+	sudo ip addr add 192.168.3.101/24 dev tap0
+
 # 运行 QEMU
 .PHONY: run
 run:

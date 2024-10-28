@@ -1,5 +1,6 @@
 # 1. 运行
 ```bash
+setup_tap
 make run
 ```
 # 2. 来源
