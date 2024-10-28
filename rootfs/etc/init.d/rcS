@@ -1,0 +1,15 @@
+#! /bin/sh
+#PATH=/sbin:/bin:/usr/sbin:/usr/bin
+#LD_LIBRARY_PATH=/lib
+#export PATH LD_LIBRARY_PATH
+
+mount -a
+#mkdir -p /dev/pts
+#mount -t devpts devpts /dev/pts
+#mkdir -p /var/lock
+#echo /sbin/mdev > /proc/sys/kernel/hotplug
+#mdev -s
+#echo -e "Remounting the root filesystem"
+#mount  -o  remount,rw  /
+#ifconfig eth0 0.0.0.0 up
+#udhcpc -i eth0
